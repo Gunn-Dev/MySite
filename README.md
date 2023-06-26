@@ -1,40 +1,53 @@
-## Project Name
+## mySite - Dynamic Personal Website
 
-Web Development.
-This project is a web development project that aims to create a responsive and interactive website for a fictional company or organization. It utilizes HTML, CSS, and JavaScript to build the front-end components and functionality.
+mySite is a dynamic personal website project that aims to showcase information about you, your projects, and provide an introduction to your online presence. This project is built using Django, a high-level Python web framework, which provides a robust and scalable foundation for web application development.
 
-## Project Description
-
-The project focuses on creating a modern and visually appealing website for the company or organization. It incorporates various features and sections, including a homepage, about us, services, portfolio, contact form, and a footer.
-
-The website is designed to be responsive, ensuring that it displays properly on different devices and screen sizes. The layout and design are optimized for a seamless user experience, with intuitive navigation and visually appealing elements.
-
-## Table Of Contents:
-
-Homepage: Provides an overview of the company/organization and its core offerings.
-About Us: Presents information about the company/organization's background, values, and team.
-Services: Highlights the services provided by the company/organization.
-Portfolio: Showcases the company/organization's previous projects or notable work.
-Contact Form: Allows users to get in touch with the company/organization by submitting a form.
-Footer: Displays relevant information and links, such as social media profiles and additional resources.
-The project utilizes HTML for the structure and content, CSS for styling and layout, and JavaScript for interactivity and dynamic behavior. It follows best practices in web development, including code organization, naming conventions, and semantic markup.
+## Features
+About Me: Displays information about you, including a brief bio, skills, and interests.
+Projects: Showcases your notable projects, including descriptions, images, and links.
+Blog: Allows you to write and publish blog posts about various topics.
+Contact: Provides a means for visitors to get in touch with you via a contact form.
 
 ## Installation
 
-To install My Awesome Project locally, follow these steps:
+Clone the repository:
+shell
+git clone https://github.com/your-username/mySite.git
+Change into the project directory:
+shell
+cd mySite
+Create and activate a virtual environment (optional, but recommended):
+shell
+python -m venv env
+source env/bin/activate
+Install the project dependencies:
+shell
+pip install -r requirements.txt
+Apply the database migrations:
+shell
+python manage.py migrate
+Start the development server:
+shell
+python manage.py runserver
+Open your web browser and visit http://localhost:8000 to see the website in action.
 
-1. Clone the repository: `git clone (https://github.com/Gunn-Dev/Project..git)`
-2. Navigate to the project directory: `cd Project.`
-3. Install the dependencies: `npm install`
+## Configuration
 
-## Usage
+Customize the content:
+Update the information in the templates located in the personal/templates/personal/ directory to reflect your own bio, skills, project details, etc.
+Add your own project images to the personal/static/personal/images/ directory.
+Modify the CSS styles in the personal/static/personal/css/ directory to customize the website's appearance.
+Configure email settings:
+If you plan to use the contact form, set up your email backend configuration in the settings.py file.
+Deploy to a production environment:
+Update the DEBUG setting in the settings.py file to False.
+Configure a production-ready web server, such as Apache or Nginx, to serve the application.
 
-Open the index.html file in a web browser to view the website locally.
-Customize the content, styles, and functionality as needed for your specific project requirements.
-Deploy the website to a web server or hosting platform to make it accessible to the public.
+## Contributing
 
-## Credits
+Contributions are welcome! If you find any issues or have suggestions for improvements, please submit an issue or a pull request.
 
-This project was created by:
+## Contact
 
-- Gunn-Dev ([@Gunn-Dev](https://github.com/Gunn-Dev))
+For any inquiries or questions, feel free to contact me at CameronGunn012@gmail.com.
+
