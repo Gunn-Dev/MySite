@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>Online Store</title>
+    <style>
+
+  body {
+    background-color: #000000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.product {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #0f0230;
+    box-shadow: 0 2px 4px rgba(16, 2, 46, 0.5);
+    border-radius: 4px;
+    color: #fbfafa;
+}
+
+.product img {
+    transition: transform 0.8s;
+    width: 100%;
+    height: auto;
+}
+
+.product img:hover {
+    transform: scale(1.1);
+}
+
+h3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+ul {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+button {
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+}
+
+footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    max-width: 150px;
+    height: auto;
+}
+
+footer form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+footer .form-row {
+    align-items: center;
+}
+
+footer input {
+    width: 100%;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.logo-img {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 32px;
+    font-family: "Arial Black", sans-serif;
+    margin: 0;
+    text-align: center;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="C:\Users\camer\OneDrive\Documents\Level 2\lesson 2.17\Cameron.svg" alt="Company Logo" class="logo-img">
+            <h1 class="text-center">Gunn<br>Luxury<br>Cars</h1>
+        </div>
+        <div class="row mt-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="product">
+                    <div class="product-images">
+                        <img src="https://iconicclassiccars.co.za/wp-content/uploads/2023/04/IMG-20230411-WA0001-400x284.jpg"
+                            class="img-fluid"
+                            onmouseover="changeImage(this,'https://iconicclassiccars.co.za/wp-content/uploads/2023/04/Screenshot_20230412-112428_Instagram-400x284.jpg')"
+                            onmouseout="resetImage(this,'https://iconicclassiccars.co.za/wp-content/uploads/2023/04/IMG-20230411-WA0001-400x284.jpg')">
+            </div>
+                <h3>Jaguar Fixed Head E-type (Series 1)</h3>
+                <p>R850 000</p>
+                <p>
+                    <li>1961</li>
+                    <li>3.8L Six Cylinder</li>
+                    <li>Rhd</li>
+                    <li>4 Speed Manual Transmission</li>
+                    <li>Original Colour</li>
+                    <li>Original Engine & Interior.</li>
+                    <li>Disc Breaks</li>
+                    <li>Original Aluminum Dash.</li>
+                    <li>Two-seater convertible</li>
+                    <li>rear-wheel drive grand tourer</li>
+                </p>
+                <button class="btn btn-primary">Buy</button>
+                </div>
+                </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="product">
+                    <div class="product-images">
+                        <img src="https://www.topgear.com/sites/default/files/images/news-article/carousel/2017/11/cf7d991392cd0ddfe89c1b8e611cdfc4/ringbrothers_1972_amc_javelin_amx_defiant_1.jpg?w=976&h=549"
+                            class="img-fluid"
+                            onmouseover="changeImage(this,'https://www.topgear.com/sites/default/files/images/news-article/carousel/2017/11/cf7d991392cd0ddfe89c1b8e611cdfc4/ringbrothers_1972_amc_javelin_amx_defiant_3.jpg?w=976&h=549')"
+                            onmouseout="resetImage(this,'https://www.topgear.com/sites/default/files/images/news-article/carousel/2017/11/cf7d991392cd0ddfe89c1b8e611cdfc4/ringbrothers_1972_amc_javelin_amx_defiant_1.jpg?w=976&h=549')">
+            </div>
+                    <h3>Javelin AMX</h3>
+                    <p>R980 000</p>
+                    <p>
+                        <li>Year of manufacture 1972</li>
+                        <li>1,036bhp carbon-bodied</li>
+                        <li>6.2-litre supercharged Hemi</li>
+                        <li>Bowler automatic transmission</li>
+                        <li>Petrol motor</li>
+                        <li>Custom suspension setup</li>
+                        <li>Cuda inspired gills and bumper</li>
+                        <li>Baer brakes</li>
+                        <li>Steel side-exit exhausts</li>
+                        <li>Extensive history file</li>
+                        <li>Carbon fibre driveshaft</li>
+                    </p>
+                    <button class="btn btn-primary">Buy</button>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="product">
+                    <div class="product-images">
+                        <img src="https://www.topgear.com/sites/default/files/2021/07/04%20DSC04108.jpg?w=976&h=549" class="img-fluid"
+                            onmouseover="changeImage(this,'https://www.topgear.com/sites/default/files/2021/07/08%20DSC03915.jpg?w=976&h=549')"
+                            onmouseout="resetImage(this,'https://www.topgear.com/sites/default/files/2021/07/04%20DSC04108.jpg?w=976&h=549')">
+                            <h3>Porsche 911</h3>
+                            <p>R1 080 000</p>
+                            <p>
+                                <li>Year of manufacture 1972</li>
+                                <li>Twin injectors per cylinder and four valve heads</li>
+                                <li>Exhaust is Inconel and titanium</li>
+                                <li>Hydraulic power steering</li>
+                                <li>Naturally aspirated motor</li>
+                                <li>Double wishbone front suspension</li>
+                                <li>40mm FIA roll cage</li>
+                                <li>Carbon fibre body panels</li>
+                                <li>Weighing less than 1,100kg</li>
+                            </p>
+                            <button class="btn btn-primary">Buy</button>
+                    </div>
+                </div>
+            </div>
+            
+                    <div class="row mt-4">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product">
+                                <div class="product-images">
+                                    <img src="https://www.tuningblog.eu/wp-content/uploads/2021/12/Toyota-Supra-MK4-Lamborghini-Centenario-Widebody-Kit-Tuning-2022-3.jpg?ezimgfmt=ng:webp/ngcb2"
+                                        class="img-fluid"
+                                        onmouseover="changeImage(this, 'https://www.tuningblog.eu/en/wp-content/uploads/2021/12/Toyota-Supra-MK4-Lamborghini-Centenario-Widebody-Kit-Tuning-2022-2.jpg')"
+                                        onmouseout="resetImage(this, 'https://www.tuningblog.eu/wp-content/uploads/2021/12/Toyota-Supra-MK4-Lamborghini-Centenario-Widebody-Kit-Tuning-2022-3.jpg?ezimgfmt=ng:webp/ngcb2')">
+                                    </div>
+                                    <h3>Toyota Supra MK4</h3>
+                                    <p>R1 400 000.00</p>
+                                    <ul>
+                                        <li>Velvet front apron splinter</li>
+                                        <li>Both sides are large Trim installed</li>
+                                        <li>Wide body kit</li>
+                                        <li>Bonnet with powerful air vents</li>
+                                        <li>Fins on both sides</li>
+                                        <li>Carbon headlight bezels</li>
+                                        <li>Air intakes stocked behind the doors</li>
+                                        <li>XXL diffuser</li>
+                                        <li>Sports exhaust system with three central tailpipes</li>
+                                        <li>Capable of 2,000 hp</li>
+                                        <li>Tightly-packaged, inline configuration</li>
+                                        <li>Non-interference valvetrain</li>
+                                        <li>Bulletproof cast-iron block</li>
+                                </p>
+                                <button class="btn btn-primary">Buy</button>
+                            </div>
+                        </div>
+                    
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product">
+                                <div class="product-images">
+                                    <img src="https://wallpaperset.com/w/full/a/5/2/464477.jpg" class="img-fluid"
+                                        onmouseover="changeImage(this,'https://wallpaperset.com/w/full/a/e/9/464475.jpg')"
+                                        onmouseout="resetImage(this,'https://wallpaperset.com/w/full/a/5/2/464477.jpg')">
+                                    </div>
+                                    <h3>Nissan GTR R34 V-Spec</h3>
+                                    <p>R1 480 000.00</p>
+                                    <ul>
+                                        <li>very clean and looked after R34 GTR V-spec II Nur</li>
+                                        <li>1 of 81 made in this colour</li>
+                                        <li>Comes with original books and documented history.</li>
+                                        <li>Less than 45,000 kms.</li>
+                                        <li>Eibach Pro Kit springs.</li>
+                                        <li>HKS Super Turbo Exhaust.</li>
+                                        <li>Turbo timer.</li>
+                                        <li>Clutch master cylinder & fluids</li>
+                                        <li>Radiator hoses (water pump, timing belt, tensioner pulley changed at 31,338 kms)</li>
+                                        <li>Idler pulley</li>
+                                </p>
+                                <button class="btn btn-primary">Buy</button>
+                            </div>
+                        </div>
+                    
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product">
+                                <div class="product-images">
+                                    <img src="https://www.classicdriver.com/sites/default/files/users/32080/cars_images/feed_700527/7700ae8fe969e90223995afb7f1487da.jpeg"
+                                        class="img-fluid"
+                                        onmouseover="changeImage(this,'https://www.classicdriver.com/sites/default/files/users/32080/cars_images/feed_700527/237a0bb18baa88b22835091a0c51d967.jpeg')"
+                                        onmouseout="resetImage(this,'https://www.classicdriver.com/sites/default/files/users/32080/cars_images/feed_700527/7700ae8fe969e90223995afb7f1487da.jpeg')">
+                                    </div>
+                                    <h3>1990 Lamborghini Countach</h3>
+                                    <p>R8 500 000.45</p>
+                                    <p>
+                                        <li>Year of manufacture 1990</li>
+                                        <li>Mileage 16 094 km</li>
+                                        <li>Pearlcent Black</li>
+                                        <li>Manual gearbox</li>
+                                        <li>Petrol motor</li>
+                                        <li>Designed by Horacio Pagani</li>
+                                        <li>Air intakes behind the doors</li>
+                                        <li>Uprated chassis developed by 3-time World Rally Champion, Sandro Munari</li>
+                                        <li>Only 657 were produced, less than 10% of which were right-hand-drive</li>
+                                        <li>Extensive history file</li>
+                                        <li>Recent major service and overhaul</li>
+                                    </p>
+                                    <button class="btn btn-primary">Buy</button>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="row mt-4">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product">
+                                <div class="product-images">
+                                    <img src="https://images.squarespace-cdn.com/content/v1/58a1deae2994ca7355abb9ba/1589446739555-U7CU34D73HF9TNRV9L00/1967-ford-mustang-eleanor-gt2.jpg?format=750w"
+                                        class="img-fluid"
+                                        onmouseover="changeImage(this,'https://images.squarespace-cdn.com/content/v1/58a1deae2994ca7355abb9ba/1589446739630-QLWTJX0DHR5OBE5B7LST/1967-ford-mustang-eleanor-gt.jpg?format=750w')"
+                                        onmouseout="resetImage(this,'https://images.squarespace-cdn.com/content/v1/58a1deae2994ca7355abb9ba/1589446739555-U7CU34D73HF9TNRV9L00/1967-ford-mustang-eleanor-gt2.jpg?format=750w')">
+                                </div>
+                                <h3>1967 Mustang Fastback Shelby GT500</h3>
+                                <p>R850 000</p>
+                                <p>
+                                    <li>Coyote 5.0 Engine</li></li>
+                                    <li>TKO 600 Manual 6 Speed</li>
+                                    <li>Hot Rod Front Suspension</li>
+                                    <li>Hot Rod Rear Suspension</li>
+                                    <li>4 Wheel Disc Brakes</li>
+                                    <li>GT500 Style Wheels</li>
+                                    <li>Billet Hood Hinges</li>
+                                    <li>Magnaflow Exhaust</li>
+                                    <li>Custom Fuel Injection Fuel Tank</li>
+                                </p>
+                                <button class="btn btn-primary">Buy</button>
+                            </div>
+                        </div>
+                    
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product">
+                                <div class="product-images">
+                                    <img src="http://speedhunters-wp-production.s3.amazonaws.com/wp-content/uploads/2018/07/24095934/2018-SH-Widebody-C3-Corvette-Trevor-Ryan_006.jpg"
+                                        class="img-fluid"
+                                        onmouseover="changeImage(this,'http://speedhunters-wp-production.s3.amazonaws.com/wp-content/uploads/2018/07/24100001/2018-SH-Widebody-C3-Corvette-Trevor-Ryan_012-1200x800.jpg')"
+                                        onmouseout="resetImage(this,'http://speedhunters-wp-production.s3.amazonaws.com/wp-content/uploads/2018/07/24095934/2018-SH-Widebody-C3-Corvette-Trevor-Ryan_006.jpg')">
+                                </div>
+                                <h3>1970 Chevrolet Corvette</h3>
+                                <p>R980 000</p>
+                                <p>
+                                    <li>Two-door convertible/coupe</li>
+                                    <li>Rear wheel drive</li>
+                                    <li>Front engine</li>
+                                    <li>90 degree V Valve-In-Head</li>
+                                    <li>8 Cylinder V8</li>
+                                    <li>4-Barrel Carburetor</li>
+                                    <li>390 Horsepower</li>
+                                    <li>Single Dry Disk Centrifugal</li>
+                                    <li>Hot rolled steel material</li>
+                                    <li>Extensive history file</li>
+                                    <li>Titanium Driveshaft</li>
+                                </p>
+                                <button class="btn btn-primary">Buy</button>
+                            </div>
+                        </div>
+                    
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product">
+                                <div class="product-images">
+                                    <img src="https://gmauthority.com/blog/wp-content/uploads/2020/12/1969-Pontiac-GTO-Pro-Touring-Exterior-005-AutotopiaLA-black-front-three-quarters-720x340.jpg"
+                                        class="img-fluid"
+                                        onmouseover="changeImage(this,'https://gmauthority.com/blog/wp-content/uploads/2020/12/1969-Pontiac-GTO-Pro-Touring-Exterior-003-AutotopiaLA-black-front-1024x683.jpg')"
+                                        onmouseout="resetImage(this,'https://gmauthority.com/blog/wp-content/uploads/2020/12/1969-Pontiac-GTO-Pro-Touring-Exterior-005-AutotopiaLA-black-front-three-quarters-720x340.jpg')">
+                                    <h3>1969 Pontiac Gto</h3>
+                                    <p>R780 000</p>
+                                    <p>
+                                        <li>1397 kg</li>
+                                        <li>16 OHV (2 valves per cylinder)</li>
+                                        <li>Cast-iron Cylinder block</li>
+                                        <li>4 Manual Close Ratio Gearbox</li>
+                                        <li>5 Seater</li>
+                                        <li>The standard 350-hp</li>
+                                        <li>19x9 front Budnik Cannon wheels with adjustable</li>
+                                        <li>20x14 rear wheels</li>
+                                        <li>Street Rod Garage chassis</li>
+                                    </p>
+                                    <button class="btn btn-primary">Buy</button>
+                                </div>
+                            </div>
+                        </div>
+
+            <hr>
+            
+    <footer>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="C:\Users\camer\OneDrive\Documents\Level 2\lesson 2.17\Cameron.svg" alt="Company Logo">
+                <li>Pohne : 068 565 5303</li>
+                <li>Email : GunnLuxuryCars@gmail.com</li>
+                <li>Postal : 29 Breena Street, Harmelia</li>
+            </div>
+            <div class="col-md-6 text-center"> <!-- Added 'text-center' class -->
+                <form>
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="col">
+                            <input type="email" class="form-control" placeholder="Phone">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+            </div>
+
+    <script>
+        // JavaScript code for image hover effect
+        function changeImage(element, newImage) {
+            element.src = newImage;
+        }
+
+        function resetImage(element, originalImage) {
+            element.src = originalImage;
+        }
+    </script>
+</body>
+
+</html>
