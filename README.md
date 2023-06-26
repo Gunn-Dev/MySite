@@ -1,6 +1,6 @@
 ## Project Name
 
-Web Development
+Web Development.
 This project is a web development project that aims to create a responsive and interactive website for a fictional company or organization. It utilizes HTML, CSS, and JavaScript to build the front-end components and functionality.
 
 ## Project Description
