@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Online CV</title>
+</head>
+<style>
+  body {
+    background-color: #efefef;
+  }
+
+  body,
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+  }
+
+  img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  /* Style paragraphs */
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  /* Style contact details list */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+
+  /* Style links */
+  a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* Add some box shadow to headings */
+  h1,
+  h2 {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Add a subtle border to the page */
+  .container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  /* Add some padding to the container */
+  .container {
+    padding: 30px;
+  }
+
+  /* Style the education and work experience section */
+  .container p:nth-of-type(5),
+  .container p:nth-of-type(8) {
+    text-align: left;
+    margin-top: 30px;
+  }
+
+  .container p:nth-of-type(5)::before,
+  .container p:nth-of-type(8)::before {
+    content: "\2022";
+    color: #0066cc;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+
+  .container p:nth-of-type(5),
+  .container p:nth-of-type(8) {
+    margin-left: 20px;
+  }
+
+  .container p:nth-of-type(5) {
+    margin-top: 20px;
+  }
+
+  /* Style the responsibilities list */
+  .container p:nth-of-type(7),
+  .container p:nth-of-type(10) {
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  .container p:nth-of-type(7) {
+    margin-top: 10px;
+  }
+
+  .container p:nth-of-type(7)::before,
+  .container p:nth-of-type(10)::before {
+    content: "-";
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-weight: bold;
+  }
+</style>
+<body>
+  <img src="profile_image.jpg" alt="Cameron Gunn">
+
+  <h1>Short Bio</h1>
+  <p>
+    Hello, my name is Cameron Gunn. I am a passionate software developer with experience in web development. I love
+    creating innovative solutions and learning new technologies. My motivation lies in building user-friendly and
+    efficient applications that solve real-world problems.
+    I am also an experienced and skilled graphic designer that has specialised in all forms of graphic design over the
+    last 7 years in my family business "Lance Gunn Design Co.". In those years I have completed Over 500 successful
+    projects, across multiple industries.
+  </p>
+
+  <h2>Contact Details</h2>
+  <p>
+    Name: Cameron Gunn<br>
+    Phone: 068 565 5303<br>
+    Email: CameronGunn012@gmail.com<br>
+    <li>LinkedIn: <a href="https://www.linkedin.com/in/cameron-gunn-08501a211/">LinkedIn Profile</a></li>
+    <li>Facebook: <a href="https://www.facebook.com/cameron.gunn2">Facebook Profile</a></li>
+    <li>Instagram: <a href="https://www.instagram.com/thats.mr.gunn.to.you/">Instagram Profile</a></li>
+  </p>
+
+  <h2>Skills and Competencies</h2>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>Python</li>
+    <li>Ruby</li>
+    <li>Graphic Design</li>
+  </ul>
+
+  <h2>Education</h2>
+  <p>
+    Graphic Design<br>
+    <li>Lance Gunn Design Co., 2016-Present</li>
+    <br>
+    Software Development<br>
+    <br>
+    <li>Hyperion Dev, 2023-Present</li>
+    <br>
+    Web Development<br>
+    <br>
+    <li>Self Taught, 2019-Present</li>
+
+
+  </p>
+
+  <!-- Work experience -->
+  <h2>Work Experience</h2>
+  <p>
+    <li>Software Developer<br></li>
+    Hyperion Dev, 2023-Present<br>
+    Responsibilities:<br>
+    - Developed web applications<br>
+    - Created multiple time saving applications<br>
+    - Implemented new features and enhancements
+    <br>
+    <br>
+    <li>Graphic Design<br></li>
+    Gunn Design, 2016-Present<br>
+    Responsibilities:<br>
+    - Designed multiple pamphlets for One Sun<br>
+    - Created And Designed The Logo For M-Power<br>
+    - Designed and printed magazines for Exxaro<br>
+  </p>
+</body>
+
+</html>
